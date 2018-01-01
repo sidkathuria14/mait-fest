@@ -405,7 +405,7 @@ border-radius: 30px 20px 20px 20px;
   border:none;
  }
 input {
-  text-align: center;
+  /*text-align: center;*/
   line-height: normal;
 }
 /**
@@ -421,6 +421,19 @@ input[type="radio"] {
   /* 1 */
   padding: 0;
   /* 2 */
+}
+.header{
+  z-index: 1999;
+ 
+}
+#myVideo{
+  position: absolute;
+  left: 10px;
+  top: -150px;
+  width: 1270px;
+  height: 1200px;
+  opacity: 0.1;
+  z-index: 6;
 }
 /**
  * Fix the cursor style for Chrome's increment/decrement buttons. For certain
@@ -801,6 +814,7 @@ nav.navbar .navbar-toggle.collapsed .bottom-bar {
   display: block;
   color: #AC94DD;
   font-weight: 800;
+  margin-top: -20px;
   font-size: 60px;
   line-height: 1em;
   padding: 0px 0 0px;
