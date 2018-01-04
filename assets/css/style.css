@@ -8,10 +8,10 @@
 5. Statistics with numbers / #stat
 6. Fest Plan  / #plan
 7. Video block  / #video
-8. Prizes 3-colum block / #prizes
+8. team 3-colum block / #team
 8. Guests List / #guests
 9. Sponsors logos / #sponsors
-10. Get ticket block / #ticket
+10. Get events block / #events
 11. Gallery grid / #gallery
 12. Join form / #form
 13. Full-width google map / #map
@@ -85,7 +85,9 @@ html {
  * Remove default margin.
  */
 body {
+  /*background-color: #AC94DD;*/
   margin: 0;
+  z-index: 0;
 }
 /* HTML5 display definitions
    ========================================================================== */
@@ -335,6 +337,9 @@ input::-moz-focus-inner {
  */
 .popup{
   /*visibility: hidden;*/
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
   z-index: 2000;
   position: fixed;
   border-radius: 20px;
@@ -345,10 +350,10 @@ input::-moz-focus-inner {
 padding: 5px;
 color: #ffffff;
   cursor: pointer;
-height: 30px;
+height: 50px;
 width: 350px;
-background-color: #B67EDF;
-
+/*background-color: #B67EDF;*/
+background-color: #AC3A6D;
  }
  #years{
   color: #ffffff;
@@ -364,14 +369,18 @@ background-color: #B67EDF;
   color: #B6006C;
 }
  .form{
+  border-color: #AC3A6D;
+  border
+  border-width: thick;
+  border-style: solid;
   visibility: hidden;
   text-align: center;
   position: fixed;
   z-index: 2000;
   top: 223px;
   right: 20px;
-background: linear-gradient(to left top,#13183D,#B67EDF);
-
+/*background: linear-gradient(to left top,#13183D,#B67EDF);*/
+background-color: #171C62;
   opacity: 0.9;
   /*background-color: #AC3A6D;*/
   height: 400px;
@@ -382,10 +391,13 @@ border-radius: 30px 20px 20px 20px;
   padding: 7px;
   border-radius: 20px;
   box-shadow: #ffffff;
-  text-align: center;
+  text-align: left;
   border:none;
   margin-top: 15px;
 
+ }
+ #formtext placeholder{
+  text-align: center;
  }
  #formradio{
   /*float: */
@@ -769,6 +781,13 @@ nav.navbar .navbar-toggle.collapsed .bottom-bar {
     border-bottom: 0;
   }
 }
+#festname{
+  font-size: 50px;
+  color: #AC3A6D;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 /*
 	4. Full-width zoom slider block
 */
@@ -793,14 +812,16 @@ nav.navbar .navbar-toggle.collapsed .bottom-bar {
   font-weight: 900;
   font-size: 60px;
   line-height: 0.8em;
-  margin: 75px 0 0 0;
+  /*margin: 75px 0 0 0;*/
+  margin-top: -250px;
 }
 #slider-full h1 span {
   color: #fff;
   display: block;
+  margin-top: 20px;
   text-transform: uppercase;
   font-size: 80px;
-  margin-top: 20px;
+  /*margin-top: 10px;*/
 }
 #slider-full .calendar .day {
   display: block;
@@ -814,8 +835,8 @@ nav.navbar .navbar-toggle.collapsed .bottom-bar {
   display: block;
   color: #AC94DD;
   font-weight: 800;
-  margin-top: -20px;
-  font-size: 60px;
+  margin-top: 100px;
+  font-size: 50px;
   line-height: 1em;
   padding: 0px 0 0px;
 }
@@ -825,7 +846,7 @@ nav.navbar .navbar-toggle.collapsed .bottom-bar {
   }
   #slider-full h1 {
     font-size: 50px;
-    margin: 55px 0 0px 0;
+    margin: 0px 0 0px 0;
   }
   #slider-full h1 span {
     font-size: 60px;
@@ -1235,6 +1256,7 @@ nav.navbar .navbar-toggle.collapsed .bottom-bar {
     margin: 12px 0;
   }
 }
+
 /*
 	7. Video block
 */
@@ -1252,7 +1274,7 @@ nav.navbar .navbar-toggle.collapsed .bottom-bar {
 }
 #video a {
   display: block;
-  z-index: 2;
+  z-index: 200;
   position: absolute;
   color: #fff;
   font-size: 55px;
@@ -1278,33 +1300,39 @@ nav.navbar .navbar-toggle.collapsed .bottom-bar {
   z-index: 1;
 }
 /*
-	8. Prizes 3-colum block
+	8. team 3-colum block
 */
-#prizes {
+#team {
   padding: 90px 0;
-  background: #EBEBF6;
+  background: #171C62;
 }
-#prizes h3 {
+#team h3 {
   margin-bottom: 30px;
 }
-#prizes .item {
+#team .item {
   background: #fff;
   text-align: center;
-  padding: 75px 0;
-  height: 465px;
+  padding: 25px 0;
+  margin-top: 20px;
+  height: 400px;
 }
-#prizes .item .photo {
+#team .item .photo {
   position: relative;
   display: block;
   margin: 0 auto;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
+margin-top: 0px;
   background: #fff;
   border: 20px solid #EBEBF6;
   text-align: center;
   line-height: 110px;
 }
-#prizes .item .num {
+#photo{
+  width: 100px;
+  height: 100px;
+}
+#team .item .num {
   position: relative;
   display: block;
   font-weight: 900;
@@ -1313,20 +1341,21 @@ nav.navbar .navbar-toggle.collapsed .bottom-bar {
   line-height: 1em;
   margin: -56px 0 26px 0;
 }
-#prizes .item .header {
+#team .item .header {
   font-weight: 900;
   font-size: 18px;
 }
-#prizes .item .header span {
+#team .item .header span {
   display: block;
-  font-size: 48px;
+  margin-top: 20px;
+  font-size: 35px;
   line-height: 1em;
 }
 @media (max-width: 991px) {
-  #prizes {
+  #team {
     padding: 50px 0;
   }
-  #prizes .row > div {
+  #team .row > div {
     margin-bottom: 30px;
   }
 }
@@ -1350,9 +1379,9 @@ nav.navbar .navbar-toggle.collapsed .bottom-bar {
   }
 }
 /*
-	10. Get ticket block
+	10. Get events block
 */
-#ticket {
+#events {
   background: #1b1f83;
   /* Old browsers */
   background: -moz-linear-gradient(left, #1b1f83 0%, #972461 100%);
@@ -1367,7 +1396,7 @@ nav.navbar .navbar-toggle.collapsed .bottom-bar {
   padding: 90px 0 120px;
   color: #fff;
 }
-#ticket:after {
+#events:after {
   content: "";
   position: absolute;
   left: 0;
@@ -1377,18 +1406,18 @@ nav.navbar .navbar-toggle.collapsed .bottom-bar {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: url("../images/ticket-bg.png") no-repeat 10% 50%;
+  background: url("../images/events-bg.png") no-repeat 10% 50%;
 }
 @media (max-width: 991px) {
-  #ticket:after {
+  #events:after {
     display: none;
   }
 }
-#ticket h3 {
+#events h3 {
   color: #fff;
   margin-bottom: 32px;
 }
-#ticket .item {
+#events .item {
   text-align: center;
   background: rgba(255, 255, 255, 0.1);
   border: 8px solid #AC94DD;
@@ -1396,32 +1425,33 @@ nav.navbar .navbar-toggle.collapsed .bottom-bar {
   position: relative;
   z-index: 5;
 }
-#ticket .item.premium {
+#events .item.premium {
   background: rgba(23, 28, 98, 0.5);
 }
-#ticket .item .header {
+
+#events .item .header {
   font-weight: 900;
   font-size: 30px;
   line-height: 1em;
   color: #AC94DD;
 }
-#ticket .item .price {
+#events .item .price {
   font-weight: 900;
   font-size: 72px;
   line-height: 1em;
   margin-bottom: 30px;
 }
-#ticket .item ul {
+#events .item ul {
   list-style: none;
   text-align: left;
   margin: 0 auto 20px;
   display: inline-block;
 }
-#ticket .item ul li {
+#events .item ul li {
   margin: 0 0 12px -30px;
   font-size: 18px;
 }
-#ticket .item ul li:before {
+#events .item ul li:before {
   content: "\f00c";
   display: block;
   display: inline-block;
@@ -1437,12 +1467,12 @@ nav.navbar .navbar-toggle.collapsed .bottom-bar {
   margin: 7px 0 0 -26px;
 }
 @media (max-width: 991px) {
-  #ticket .item {
+  #events .item {
     margin-bottom: 30px;
   }
 }
 @media (max-width: 768px) {
-  #ticket {
+  #events {
     padding: 50px 0 50px;
   }
 }
@@ -1657,11 +1687,17 @@ footer .copy {
   color: #AC94DD;
   margin: 20px 0;
 }
+ .iosdlink : hover {
+text-decoration: underline;
+color: #AC94DD;
+  }
 @media (max-width: 991px) {
   footer .social {
     margin: 0px 0px 20px;
   }
 }
+ 
+
 footer .social a {
   margin-right: 16px;
   line-height: 40px;
@@ -1967,4 +2003,36 @@ img.rounded {
 .radiobuttons{
   position: relative;
   top: 20px;
+}
+#meetteam{
+  color: white;
+}
+#photo{
+
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
+  border-style: solid;
+  border-width: 8px;
+  border-color: #AC3A6D;
+
+
+}
+
+
+.photorow{
+ float: left;
+  margin-top: 0px;
+}
+#personname{
+  color: white;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-left: 0px;
+
+}
+.person{
+  margin-top: 120px;
+  float: left;
+
 }

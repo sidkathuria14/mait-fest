@@ -39,7 +39,9 @@ $(document).on('ready', function() {
 	});	
 });
 
-
+$('#submit').on('click',function(){
+	alert("thank you for your response");
+});
 
 $(window).on('scroll', function (event) {
 
@@ -303,4 +305,110 @@ function initMap() {
 	  map: map
 	});
 	marker.setIcon('assets/images/map-marker.png');
-}
+ }
+//  <div class="row"> 
+// 				  <div class="col-md-4 item-left">
+// 					 <div class="item">
+// 						 <!-- <div class="photo"><img src="assets/images/_icon-1.png" alt="Icon" /></div> -->
+// 						 <!-- <span class="num">15 </span> -->
+// 						 <span class="header">
+// 							 <span>Deepali Singhal </span>
+// 							<!-- for cloudchasers winners -->
+// 						 </span>
+// 					 </div>
+// 				 </div>
+
+// 				 <div class="col-md-4 item-center">
+// 					 <div class="item">
+// 						<!--  <div class="photo"><img id = "photo" src="assets/images/deepanshi.jpg"  alt="Icon" ></div>		 -->	
+// 						 <!-- <span class="num">50 </span> -->
+// 						 <span class="header">
+// 							 <span>Deepanshi Bansal</span>
+// 							<!-- for vaper winners -->
+// 						 </span>
+// 					 </div>
+// 				 </div>
+
+// 				 <div class="col-md-4 item-right">
+// 					 <div class="item">
+// 						 <!-- <div class="photo"><img src="assets/images/_icon-3.png" alt="Icon" /></div>					 -->
+// 						 <!-- <span class="num">120 </span> -->
+// 						 <span class="header">
+// 							 <span>Sparsh Wadhwa </span>
+// 							<!-- for cloudchasers winners -->
+// 						 </span>
+// 					 </div>
+// 				 </div>	
+
+// 			 </div>
+
+// 			  <div class="row">
+// 				 <div class="col-md-4 item-left">
+// 					 <div class="item">
+// 						 <!-- <div class="photo"><img src="assets/images/_icon-1.png" alt="Icon" /></div> -->
+// 						 <!-- <span class="num">15 </span> -->
+// 						 <span class="header">
+// 							 <span>Rajat </span>
+// 							<!-- for cloudchasers winners -->
+// 						 </span>
+// 					 </div>
+// 				 </div>
+				 
+// 				 <div class="col-md-4 item-center">
+// 					 <div class="item">
+// 						<!--  <div class="photo"><img src="assets/images/deepanshi.jpg" width = "150px" height = "150px" alt="Icon" ></div -->		
+// 						 <span class="num">50 </span>
+// 						 <span class="header">
+// 							 <span>Saurabh aggarwal</span>
+// 							<!-- for vaper winners -->
+// 						 </span>
+// 					 </div>
+// 				 </div>
+
+// 				 <div class="col-md-4 item-right">
+// 					 <div class="item">
+// 						 <!-- <div class="photo"><img src="assets/images/_icon-3.png" alt="Icon" /></div>					 -->
+// 						 <!-- <span class="num">120 </span> -->
+// 						 <span class="header">
+// 							 <span>Rishabh Singh </span>
+// 							<!-- for cloudchasers winners -->
+// 						 </span>
+// 					 </div>
+// 				 </div>	
+
+// 			 </div>
+
+// 			  <div class="row">
+// 				 <div class="col-md-4 item-left">
+// 					 <div class="item">
+// 						 <!-- <div class="photo"><img src="assets/images/_icon-1.png" alt="Icon" /></div> -->
+// 						 <!-- <span class="num">15 </span> -->
+// 						 <span class="header">
+// 							 <span>Heena Garg </span>
+// 							<!-- for cloudchasers winners -->
+// 						 </span>
+// 					 </div>
+// 				 </div>
+				 
+// 				 <div class="col-md-4 item-center">
+// 					 <div class="item">
+// 						 <!-- <div class="photo"><img src="assets/images/deepanshi.jpg" width = "150px" height = "150px" alt="Icon" ></div> -->			
+// 						 <!-- <span class="num">50 </span> -->
+// 						 <span class="header">
+// 							 <span>Bhavya Rawat</span>
+// 							<!-- for vaper winners -->
+// 						 </span>
+// 					 </div>
+// 				 </div>
+
+// 				 <div class="col-md-4 item-right">
+// 					 <div class="item">
+// 						 <!-- <div class="photo"><img src="assets/images/_icon-3.png" alt="Icon" /></div>					 -->
+// 						 <!-- <span class="num">120 </span> -->
+// 						 <span class="header">
+// 							 <span>Vivek Aggarwal </span>
+// 							<!-- for cloudchasers winners -->
+// 						 </span>
+// 					 </div>
+// 				 </div>	
+//				 </div> 
