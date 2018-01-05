@@ -412,3 +412,105 @@ function initMap() {
 // 					 </div>
 // 				 </div>	
 //				 </div> 
+// #events {
+//   background: #1b1f83;
+//   /* Old browsers */
+//   background: -moz-linear-gradient(left, #1b1f83 0%, #972461 100%);
+//   /* FF3.6-15 */
+//   background: -webkit-linear-gradient(left, #1b1f83 0%, #972461 100%);
+//   /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(to right, #1b1f83 0%, #972461 100%);
+//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b1f83', endColorstr='#972461', GradientType=1);
+//   /* IE6-9 */
+//   /*position: relative;*/
+//   padding: 90px 0 120px;
+//   color: #fff;
+// }
+// *#events:after {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 1;
+//   background: url("../images/events-bg.png") no-repeat 10% 50%;
+// }*/
+// @media (max-width: 1300px) {
+//   #events:after {
+//     display: none;
+//   }
+// }
+// #events h3 {
+//   color: #fff;
+//   margin-bottom: 32px;
+// }
+// #events .item {
+//   width: 400px;
+//   text-align: center;
+//   margin-left: 150px;
+//   margin-right: 40px;
+//   background: rgba(255, 255, 255, 0.1);
+//   border: 8px solid #AC94DD;
+//   padding: 40px 0 45px;
+//   position: relative;
+//   z-index: 5;
+//   margin-top: 40px;
+// }
+
+
+
+// #events .item.premium {
+//   background: rgba(23, 28, 98, 0.5);
+// }
+
+// #events .item .header {
+//   font-weight: 900;
+//   font-size: 30px;
+//   line-height: 1em;
+//   color: #AC94DD;
+// }
+// #events .item .price {
+//   font-weight: 900;
+//   font-size: 72px;
+//   line-height: 1em;
+//   /*margin-bottom: 30px;*/
+// }
+// #events .item ul {
+//   list-style: none;
+//   text-align: left;
+//   margin: 0 auto 20px;
+//   display: inline-block;
+// } 
+// #events .item ul li {
+//   margin: 0 0 12px -30px;
+//   font-size: 18px;
+// }
+// #events .item ul li:before {
+//   content: "\f00c";
+//   display: block;
+//   display: inline-block;
+//   font: normal normal normal 14px/1 FontAwesome;
+//   font-size: inherit;
+//   text-rendering: auto;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   font-weight: 100;
+//   color: #AC94DD;
+//   font-size: 14px;
+//   position: absolute;
+//   margin: 7px 0 0 -26px;
+// }
+// @media (max-width: 991px) {
+//   #events .item {
+//     margin-bottom: 30px;
+//   }
+// }
+// @media (max-width: 768px) {
+//   #events {
+//     padding: 50px 0 50px;
+//   }
+// }
