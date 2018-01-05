@@ -51,9 +51,10 @@ Date Downloaded: 01-01-2018 19:44:12 !-->
 				 </button>
 				 <ul class="nav navbar-nav">
 					 <li><a href="#plan">Schedule </a></li>
-					 <li><a href="#video">Video </a></li>
-					 <li><a href="#prizes">Our team </a></li>
+					 <li><a href="#video">Teaser </a></li>
 					 <li><a href="#sponsors">Sponsors </a></li>
+					 <li><a href="#team">Our team </a></li>
+					 
 					 <li><a href="#gallery">Gallery </a></li>
 					 <li><a href="#contactus">Contact Us! </a></li>
 					 <!-- <li><a href="#gallery">Be a Representative </a></li> -->
@@ -64,20 +65,19 @@ Date Downloaded: 01-01-2018 19:44:12 !-->
 	 </nav>
 
 
-<div class = header">
+<!-- <div class = header"> -->
 
 
 	 <section id="slider-full" class="slider-full" data-zs-bullets="false" data-zs-speed="22000" data-zs-interval="10000" data-zs-switchspeed="400" data-zs-src='["assets/images/_slider-1.jpg","assets/images/_slider-2.jpg","assets/images/_slider-3.jpg","assets/images/_slider-4.jpg"]' data-zs-overlay="false">
-			 	<video autoplay muted loop id="myVideo">
-  <source src="mait_video.mp4" type="video/mp4">
+			 	<video autoplay muted loop id="myVideo" src="assets/videos/mait_video.mp4" type="video/mp4">
 </video>
 		 <div class="container">
- <h1 = id="main_header" >Largest Tech Fest</br>Around you!<span>Techno Carnival </span></h1>
+ <h1  id="main_header" >Largest Tech Fest</br>Around you!<span>Techno Carnival </span></h1>
 
 			 <div class="content">
 				 <div class="calendar">
-					 <span class="month" >april '17 </span>
-					 <span class="day">23-25 </span>
+					 <span class="month" >March '18 </span>
+					 <span class="day">9-10 </span>
 				 </div>
 				
 			 </div>
@@ -85,7 +85,7 @@ Date Downloaded: 01-01-2018 19:44:12 !-->
 	 </section>
 	 <div id="stat">
 		 <div class="container">
-			 <div class="row" id="countUp">
+			<!--  <div class="row" id="countUp">
 				 <div class="col-md-3 col-sm-3 col-ms-6 col-xs-6">
 					 <span class="number numberCount" id="countUp-1">269 </span>
 					 <span class="header">participants </span>
@@ -102,8 +102,42 @@ Date Downloaded: 01-01-2018 19:44:12 !-->
 					 <span class="number numberCount" id="countUp-4">30 </span><span class="number">+ </span>
 					 <span class="header">hours of coding </span>
 				 </div>
-			 </div>	
-		 </div>
+			 </div>	 -->
+		 <!-- </div> -->
+		 <p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("March 9, 2018 09:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+   
+  var time= days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+   document.getElementById("demo").innerHTML = time;
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 	 </div>
 	</div>
 
@@ -150,37 +184,34 @@ Date Downloaded: 01-01-2018 19:44:12 !-->
 			 <h3> Schedule </h3>
 			 <div class="row">
 				 <div class="col-md-4 col-sm-4">
-					 <div class="date">day 1 -  <span>april 23 </span></div>
-					 <span class="time"><span class="fa fa-clock-o"></span>10:00 am - 18:00 am </span>
+					 <div class="date">day 1 -  <span>March 9 </span></div>
+					 <span class="time"><span class="fa fa-clock-o"></span>9:00 am - 06:00 pm </span>
 					 <p>Morbi efficitur vitae orci __ volutpat. Donec nulla justo, _______ sed sodales ut, auctor _ ante. Integer nec libero _____ nisi consectetur rhoncus id ____ mi.  </p>
 				 </div>
 				 <div class="col-md-4 col-sm-4">
-					 <div class="date">day 2 -  <span>april 24 </span></div>
-					 <span class="time"><span class="fa fa-clock-o"></span>10:00 am - 18:00 am </span>
+					 <div class="date">day 2 -  <span>March 10 </span></div>
+					 <span class="time"><span class="fa fa-clock-o"></span>90:00 am - 06:00 pm </span>
 					 <p>Integer nec vitae nisi ___________ rhoncus id eget mi. ____ ullamcorper, augue ut rhoncus ________, enim arcu ornare est, ___ gravida nisi lectus ac ___.  </p>
 				 </div>
-				 <div class="col-md-4 col-sm-4">
-					 <div class="date">day 3 -  <span>april 25 </span></div>
-					 <span class="time"><span class="fa fa-clock-o"></span>12:00 am - 18:00 am </span>
-					 <p>Morbi efficitur vitae orci __ volutpat. Donec nulla justo, _______ sed sodales ut, auctor _ ante. Integer nec libero _____ nisi consectetur rhoncus id ____ mi.  </p>
+			
 				 </div>
 			 </div>
 			 <div class="row">
 				 <div class="col-xs-12 buttons">
-					 <a href="#" class="btn btn-red">Get ticket </a>
-					 <a href="#" class="btn btn-blue">Become a member </a>
+					 <a href="#form" class="btn btn-red">Register </a>
+					
 				 </div>
 			 </div>
 		 </div>
 	 </section>
-	 <section id="video" style="background-image: url(assets/images/_video-photo.jpg);">
-		 <div class="container">
-			 <h3>Vapefest ‘16  <span>watch video </span></h3>
-			 <a href="https://www.youtube.com/watch?v=bXMrnGzsLhg&autoplay=1" class="swipebox"><span class="fa fa-play-circle"></span></a>
-		 </div>
+	 <section id="video"  >
+	 				 	<video loop autoplay id = "teaser"
+	 				 	 src="assets/videos/Final.mp4" type="video/mp4" height = "900px" width = "900px">
+</video>
+
 	 </section>
 
- <section id="events">
+ <!-- <section id="events">
 		 <div class="container">
 			 <h3>Events </h3>
 			 <div class="row">
@@ -207,11 +238,11 @@ Date Downloaded: 01-01-2018 19:44:12 !-->
 			
 		 </div>	
 	 </section>
-
+ -->
 	
 	 <section id="sponsors">
 		 <div class="container">	
-			 <h3>Fest Sponsors </h3>
+			 <h3>Techno Carnival Sponsors </h3>
 			 <div class="row">
 				 <div class="col-md-1 hidden-sm hidden-ms hidden-xs matchHeight"></div>
 				 <div class="col-md-2 col-sm-3 col-ms-4 col-xs-6 matchHeight">
@@ -259,11 +290,15 @@ Date Downloaded: 01-01-2018 19:44:12 !-->
 			 <h3 id = "meetteam">Meet Techno Carnival Team! </h3>
 			 <div class = "photorow">
 
-			<div class = "person">
-				<img id = "photo" src="assets/images/vinaysir.jpg"  alt = "Vinay Sir" >
-				<span id = "personname">Vinay Saini</span>
+			<div class = "person_vinay">
+				<img id = "photo_vinay" src="assets/images/vinaysir.jpg"  alt = "Vinay Sir" >
+					<span id = "personname_vinay">Vinay Saini</span>
+				<span id = "facultyhead">Faculty Head of</br> IOSD MAIT</span>
+			
 				<!-- <label>Vinay Sir</label> -->
 			</div>
+		</div>
+		<div class = "photorow">
 	        <div class = "person">
 				<img id = "photo" src="assets/images/deepali.jpg"  alt = "Deepali" >
 				<span id = "personname">Deepali Singh</span>
@@ -272,45 +307,7 @@ Date Downloaded: 01-01-2018 19:44:12 !-->
 				<img id = "photo" src="assets/images/deepanshi.jpg"  alt = "Deepanshi" >
 				<span id = "personname">Deepanshi Bansal</span>
 			</div>
-			<div class = "person">
-				<img id = "photo" src="assets/images/sparsh.jpg"  alt = "Deepali" >
-				<span id = "personname">Sparsh Wadhwa</span>
-			</div>
-
-</div>
-
-			 <div class = "photorow">
-
-			<div class = "person">
-				<img id = "photo" src="assets/images/rajat.jpg"  alt = "Rajat" >
-				<span id = "personname">Rajat Gupta</span>
-			</div>
-	<div class = "person">
-				<img id = "photo" src="assets/images/saurabh.jpg"  alt = "Saurabh" >
-				<span id = "personname">Saurabh Aggarwal</span>
-			</div>
-			<div class = "person">
-				<img id = "photo" src="assets/images/rishabh.jpg"  alt = "Rishabh" >
-				<span id = "personname">Rishabh Singh</span>
-			</div>
-			<div class = "person">
-				<img id = "photo" src="assets/images/heena.jpg"  alt = "Heena" >
-				<span id = "personname">Heena Garg</span>
-			</div>
-
-</div>
-
-			 <div class = "photorow">
-
-			<div class = "person">
-				<img id = "photo" src="assets/images/rawat.jpeg"  alt = "Bhavya Rawat" >
-				<span id = "personname">Bhavya Rawat</span>
-			</div>
-	<div class = "person">
-				<img id = "photo" src="assets/images/vivek.jpg"  alt = "Vivek" >
-				<span id = "personname">Vivek Aggarwal</span>
-			</div>
-			<div class = "person">
+				<div class = "person">
 				<img id = "photo" src="assets/images/krishna.jpg"  alt = "Krishna" >
 				<span id = "personname">Krishna</span>
 			</div>
@@ -319,6 +316,46 @@ Date Downloaded: 01-01-2018 19:44:12 !-->
 				<span id = "personname">Saksham</span>
 			</div>
 
+		</div>
+
+			<div class = "photorow">
+
+			<div class = "person">
+				<img id = "photo" src="assets/images/sparsh.jpg"  alt = "Deepali" >
+				<span id = "personname">Sparsh Wadhwa</span>
+			</div>
+
+         	<div class = "person">
+				<img id = "photo" src="assets/images/rajat.jpg"  alt = "Rajat" >
+				<span id = "personname">Rajat Gupta</span>
+			</div>
+            <div class = "person">
+				<img id = "photo" src="assets/images/saurabh.jpg"  alt = "Saurabh" >
+				<span id = "personname">Saurabh Aggarwal</span>
+			</div>
+			<div class = "person">
+				<img id = "photo" src="assets/images/rishabh.jpg"  alt = "Rishabh" >
+				<span id = "personname">Rishabh Singh</span>
+			</div>
+
+			 <div class = "photorow">
+			<div class = "person">
+				<img id = "photo" src="assets/images/heena.jpg"  alt = "Heena" >
+				<span id = "personname">Heena Garg</span>
+			</div>
+
+
+
+			<div class = "person">
+			<img id = "photo" src="assets/images/rawat.jpeg"  alt = "Bhavya Rawat" >
+				<span id = "personname">Bhavya Rawat</span>
+			</div>
+	<div class = "person">
+				<img id = "photo" src="assets/images/vivek.jpg"  alt = "Vivek" >
+				<span id = "personname">Vivek Aggarwal</span>
+			</div>
+
+		
 </div>
 
 			 </div>
@@ -333,53 +370,53 @@ Date Downloaded: 01-01-2018 19:44:12 !-->
 			 <h3>Gallery </h3>
 			 <div class="swiper-container row" id="gallery-slider">
 				 <div class="swiper-wrapper">
-					 <a href="assets/images/_photo-big-1.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
-						 <img src="assets/images/_photo-small-1.png" alt="Gallery" class="full-width" />
+					 <a href="assets/images/1.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
+						 <img src="assets/images/1.jpg" alt="Gallery" class="full-width" />
 					 </a>
-					 <a href="assets/images/_photo-big-2.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
-						 <img src="assets/images/_photo-small-2.png" alt="Gallery" class="full-width" />
+					 <a href="assets/images/2.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
+						 <img src="assets/images/2.jpg" alt="Gallery" class="full-width" />
 					 </a>
-					 <a href="assets/images/_photo-big-3.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
-						 <img src="assets/images/_photo-small-3.png" alt="Gallery" class="full-width" />
+					 <a href="assets/images/3.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
+						 <img src="assets/images/3.jpg" alt="Gallery" class="full-width" />
 					 </a>
-					 <a href="assets/images/_photo-big-4.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
-						 <img src="assets/images/_photo-small-4.png" alt="Gallery" class="full-width" />
+					 <a href="assets/images/DSC_0122.JPG" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
+						 <img src="assets/images/DSC_0122.JPG" alt="Gallery" class="full-width" />
 					 </a>
-					 <a href="assets/images/_photo-big-5.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
-						 <img src="assets/images/_photo-small-5.png" alt="Gallery" class="full-width" />
+					 <a href="assets/images/DSC_0130.JPG" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
+						 <img src="assets/images/DSC_0130.JPG" alt="Gallery" class="full-width" />
 					 </a>
-					 <a href="assets/images/_photo-big-6.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
-						 <img src="assets/images/_photo-small-6.png" alt="Gallery" class="full-width" />
+					 <a href="assets/images/DSC_0126.JPG" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
+						 <img src="assets/images/DSC_0126.JPG" alt="Gallery" class="full-width" />
 					 </a>
-					 <a href="assets/images/_photo-big-7.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
-						 <img src="assets/images/_photo-small-7.png" alt="Gallery" class="full-width" />
+					 <a href="assets/images/DSC_0062.JPG" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
+						 <img src="assets/images/DSC_0062.JPG" alt="Gallery" class="full-width" />
 					 </a>
-					 <a href="assets/images/_photo-big-8.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
-						 <img src="assets/images/_photo-small-8.png" alt="Gallery" class="full-width" />
+					 <a href="assets/images/DSC_0092.JPG" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
+						 <img src="assets/images/DSC_0092.JPG" alt="Gallery" class="full-width" />
 					 </a>
-					 <a href="assets/images/_photo-big-1.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
-						 <img src="assets/images/_photo-small-1.png" alt="Gallery" class="full-width" />
+					 <a href="assets/images/DSC_0094.JPG" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
+						 <img src="assets/images/DSC_0094.JPG" alt="Gallery" class="full-width" />
 					 </a>
-					 <a href="assets/images/_photo-big-2.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
-						 <img src="assets/images/_photo-small-2.png" alt="Gallery" class="full-width" />
+					 <a href="assets/images/DSC_0134.JPG" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
+						 <img src="assets/images/DSC_0134.JPG" alt="Gallery" class="full-width" />
 					 </a>
-					 <a href="assets/images/_photo-big-3.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
-						 <img src="assets/images/_photo-small-3.png" alt="Gallery" class="full-width" />
+					 <a href="assets/images/DSC_0131.JPG" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
+						 <img src="assets/images/DSC_0131.JPG" alt="Gallery" class="full-width" />
 					 </a>
-					 <a href="assets/images/_photo-big-4.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
-						 <img src="assets/images/_photo-small-4.png" alt="Gallery" class="full-width" />
+					 <a href="assets/images/ALL.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
+						 <img src="assets/images/ALL.jpg" alt="Gallery" class="full-width" />
 					 </a>
-					 <a href="assets/images/_photo-big-5.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
-						 <img src="assets/images/_photo-small-5.png" alt="Gallery" class="full-width" />
+					 <a href="assets/images/all2.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
+						 <img src="assets/images/all2.jpg" alt="Gallery" class="full-width" />
 					 </a>
-					 <a href="assets/images/_photo-big-6.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
-						 <img src="assets/images/_photo-small-6.png" alt="Gallery" class="full-width" />
+					 <a href="assets/images/DSC_0110.JPG" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
+						 <img src="assets/images/DSC_0110.JPG" alt="Gallery" class="full-width" />
 					 </a>
-					 <a href="assets/images/_photo-big-7.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
-						 <img src="assets/images/_photo-small-7.png" alt="Gallery" class="full-width" />
+					 <a href="assets/images/DSC_0171.JPG" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
+						 <img src="assets/images/DSC_0171.JPG" alt="Gallery" class="full-width" />
 					 </a>
-					 <a href="assets/images/_photo-big-8.jpg" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
-						 <img src="assets/images/_photo-small-8.png" alt="Gallery" class="full-width" />
+					 <a href="assets/images/DSC_0168.JPG" class="swiper-slide swipebox col-md-3 col-sm-4 col-ms-6 col-xs-6">
+						 <img src="assets/images/DSC_0168.JPG" alt="Gallery" class="full-width" />
 					 </a>						
 				 </div>
 				 <div class="arrows">
@@ -471,36 +508,33 @@ Date Downloaded: 01-01-2018 19:44:12 !-->
 		 <div class="container">
 
 			 <!-- <img src="assets/images/logo.png" class="logo" alt="Logo" /> -->
-			 <span id = "festname">TechnoCarnival</span>
+			 <!-- <span id = "festname">TechnoCarnival</span> -->
 
 			 <ul class="menu-footer hidden-ms hidden-xs">
 					 <li><a href="#plan">Schedule </a></li>
-					 <li><a href="#video">Video </a></li>
-					 <li><a href="#prizes">Our team </a></li>
+					 <li><a href="#video">Teaser </a></li>
 					 <li><a href="#sponsors">Sponsors </a></li>
+					 <li><a href="#prizes">Our team </a></li>
 					 <li><a href="#gallery">Gallery </a></li>
 					 <li><a href="#gallery">Contact Us! </a></li>
-					 <!-- <li><a href="#gallery">Be a Representative </a></li> -->
+					
 					 <li><a href="#form">Register </a></li>
 			 </ul>
 
-			 <div class="plan hidden-ms hidden-xs">
+		<!-- 	 <div class="plan hidden-ms hidden-xs">
 				 <div class="row">
-					 <div class="col-md-4 col-sm-4">
-						 <div class="date">day 1 -  <span>april 23 </span></div>
-						 <span class="time"><span class="fa fa-clock-o"></span>10:00 am - 18:00 am </span>
+					 <div class="dateandtime">
+						 <div class="date1">day 1 -  <span>March 9 </span></div>
+						 <span class="time1"><span class="fa fa-clock-o"></span>09:00 am - 06:00 pm </span>
 					 </div>
-					 <div class="col-md-4 col-sm-4">
-						 <div class="date">day 2 -  <span>april 24 </span></div>
-						 <span class="time"><span class="fa fa-clock-o"></span>10:00 am - 18:00 am </span>
+					 <div class="dateandtime2">
+						 <div class="date2">day 2 -  <span>March 10 </span></div>
+						 <span class="time2"><span class="fa fa-clock-o"></span>09:00 am - 06:00 pm </span>
 					 </div>
-					 <div class="col-md-4 col-sm-4">
-						 <div class="date">day 3 -  <span>april 25 </span></div>
-						 <span class="time"><span class="fa fa-clock-o"></span>12:00 am - 18:00 am </span>
-					 </div>
+				
 				 </div>
 			 </div>
-			</div>
+			</div> -->
 
 			<!--  <div class="copy"><a href="http://like-themes.com">Like-themes </a> 2017 © All ______ Reserved  <a href="#">Terms of use </a></div>
  -->
@@ -511,7 +545,8 @@ Date Downloaded: 01-01-2018 19:44:12 !-->
 				 <li><a href="https://twitter.com/iosdofficial" target = "_blank" class="fa fa-twitter"></a></li>
 				 <li><a href="https://www.instagram.com/iosdofficial/" target = "_blank" class="fa fa-instagram"></a></li>
 				 <li><a href="https://github.com/IOSD" target = "_blank" class="fa fa-github"></a></li>
-				 <li><a href="https://www.linkedin.com/company/iosd/?trk=ppro_cprof" target = "_blank" class="fa fa-linkedin"></a></li>
+				 <li><a href="https://www.linkedin.com/company/iosd/?trk=ppro_cprof" target = "_blank" class="fa fa-linkedin"></a>
+				 	<li><a href="mailto:iosdmait@iosd.com?Subject=Techno%20Fest" target = "_top" class="fa fa-mail-forward"></a></li>
 			 </ul>	
 
  <div class = "copy">Copyright©2017 - 
