@@ -1,6 +1,45 @@
-"use strict";
+// "use strict";
+// // $('#slider-full').height() = screen.height px;
+// $('#slider-full').css("height",screen.height);
+// $.fn.isInViewport = function() {
+//     var elementTop = $(this).offset().top;
+//     var elementBottom = elementTop + $(this).outerHeight();
 
+//     var viewportTop = $(window).scrollTop();
+//     var viewportBottom = viewportTop + $(window).height();
 
+//     return elementBottom > viewportTop && elementTop < viewportBottom;
+// };
+
+// $('#teaser').
+
+// // document.getElementById("#slider-full").style.height = screen.height;
+// // console.log(screen.width + " " + screen.height);
+// // console.log($('#slider-full').height());
+// // if ( $('#teaser').visible("true") ){
+// // 	// $('#teaser').prop('muted',false);
+// // 	$('#teaser').play();
+	
+// // }
+// // else {
+// // 	// $('#teaser').prop('muted',true);
+// // 	$('#teaser').pause();77
+	
+// //}
+
+// if( $(window).on('resize scroll', function() {
+
+// if ( $('#teaser').isInViewport() ){
+
+// }$('#teaser').play();
+// else {
+// 	$('#teaser').pause();
+// }
+
+// });
+// $('.event').on('hover',function(){
+// this.css("background",red);
+// });
 $('.popup').on('click',function(){
 	if($('.form').css("visibility") === "visible"){
 $('.form').css("visibility","hidden");
@@ -8,7 +47,10 @@ $('.form').css("visibility","hidden");
 else $('.form').css("visibility","visible");
 // alert("click");
 });
-
+// $('.popup').position().top = screen.height -30;
+$('.popup').css("top",screen.height-150);
+$('.form').css("top",screen.height-550);
+// console.log($('.popup').position().top-300);
 $(document).on('ready', function() { 
 
 	initParallax();

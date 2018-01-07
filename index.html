@@ -12,7 +12,7 @@ Date Downloaded: 01-01-2018 19:44:12 !-->
 	 <meta name="author" content="" />
 	 <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
-	 <title>Techno Carnival 2017 </title>
+	 <title>Impulse 1.0 </title>
 	
 	 <link href="assets/css/bootstrap-grid.css" rel="stylesheet" />
 	 <link href="assets/css/font-awesome.css" rel="stylesheet" />
@@ -50,9 +50,10 @@ Date Downloaded: 01-01-2018 19:44:12 !-->
 					 <span class="icon-bar bottom-bar"></span>
 				 </button>
 				 <ul class="nav navbar-nav">
+					<li><a href="#video">Teaser </a></li>
 					 <li><a href="#plan">Schedule </a></li>
-					 <li><a href="#video">Teaser </a></li>
-					 <li><a href="#sponsors">Sponsors </a></li>
+					 
+					<li><a href="#sponsors">Sponsors </a></li>
 					 <li><a href="#team">Our team </a></li>
 					 
 					 <li><a href="#gallery">Gallery </a></li>
@@ -65,14 +66,15 @@ Date Downloaded: 01-01-2018 19:44:12 !-->
 	 </nav>
 
 
-<!-- <div class = header"> -->
+<div class = "header">
 
 
-	 <section id="slider-full" class="slider-full" data-zs-bullets="false" data-zs-speed="22000" data-zs-interval="10000" data-zs-switchspeed="400" data-zs-src='["assets/images/_slider-1.jpg","assets/images/_slider-2.jpg","assets/images/_slider-3.jpg","assets/images/_slider-4.jpg"]' data-zs-overlay="false">
-			 	<video autoplay muted loop id="myVideo" src="assets/videos/mait_video.mp4" type="video/mp4">
-</video>
+
+	 <section id="slider-full" class="slider-full" data-zs-bullets="false" data-zs-speed="22000" data-zs-interval="10000" data-zs-switchspeed="400" data-zs-src='["assets/images/1.jpg","assets/images/2.jpg","assets/images/3.jpg","assets/images/DSC_0094.JPG"]' data-zs-overlay="false" >
+	<!-- 		 	<video autoplay muted loop id="myVideo" src="assets/videos/mait_video.mp4" type="video/mp4">
+</video> -->
 		 <div class="container">
- <h1  id="main_header" >Largest Tech Fest</br>Around you!<span>Techno Carnival </span></h1>
+ <h1  id="main_header" >IMPULSE 1.0 </span></h1>
 
 			 <div class="content">
 				 <div class="calendar">
@@ -81,8 +83,10 @@ Date Downloaded: 01-01-2018 19:44:12 !-->
 				 </div>
 				
 			 </div>
-		 </div>
+		
 	 </section>
+	  </div>
+	  
 	 <div id="stat">
 		 <div class="container">
 			<!--  <div class="row" id="countUp">
@@ -105,6 +109,31 @@ Date Downloaded: 01-01-2018 19:44:12 !-->
 			 </div>	 -->
 		 <!-- </div> -->
 		 <p id="demo"></p>
+		 <div class = "timer">
+		 <div class = "days">
+		 <span id = "time_days"></span>
+		 <span id = "time_unit">Days</span>
+		   
+         </div>
+
+   <!-- <span id = "colon">:</span> -->
+          <div class = "hours">
+		 <span id = "time_hours"></span>
+		 <span id = "time_unit">Hours</span>
+		  
+         </div>
+   <!-- <span id = "colon">:</span> -->
+          <div class = "minutes">
+		 <span id = "time_minutes"></span>
+		 <span id = "time_unit">Minutes</span>
+	
+         </div>
+   <!-- <span id = "colon">:</span> -->
+          <div class = "seconds">
+		 <span id = "time_seconds"></span>
+		 <span id = "time_unit">Seconds</span>
+         </div>
+     </div>
 
 <script>
 // Set the date we're counting down to
@@ -129,12 +158,15 @@ var x = setInterval(function() {
    
   var time= days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
-   document.getElementById("demo").innerHTML = time;
-
+   // document.getElementById("demo").innerHTML = time;
+document.getElementById("time_days").textContent = days;
+document.getElementById("time_hours").textContent = hours;
+document.getElementById("time_minutes").textContent = minutes;
+document.getElementById("time_seconds").textContent = seconds;
   // If the count down is finished, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML = "Impulse 1.0 is here!";
   }
 }, 1000);
 </script>
@@ -177,7 +209,14 @@ var x = setInterval(function() {
 
 	<div class = "popup"><p>  Want to become a representative?</p>
 </div>
+ <section id="video"  >
+	 				 <video autoplay  loop height = "900px" width = "900px"   id = "teaser" >
+	 				 	<source src="assets/videos/Final.webm" type="video/webm">
 
+Your browser does not support the video tag.
+</video>
+
+	 </section>
 
 	 <section id="plan">
 		 <div class="container">
@@ -204,22 +243,34 @@ var x = setInterval(function() {
 			 </div>
 		 </div>
 	 </section>
-	 <section id="video"  >
-	 				 	<video loop autoplay id = "teaser"
-	 				 	 src="assets/videos/Final.mp4" type="video/mp4" height = "900px" width = "900px">
-</video>
+	
 
-	 </section>
-
- <!-- <section id="events">
+<!--  <section id="events">
 		 <div class="container">
 			 <h3>Events </h3>
 			 <div class="row">
-			 		</div>
-			 		<div class = "event">
-			 		<span id = "event_heading">MaitHacks</span>
-			 	</div>
-			 	<div class = "event">
+			 -->
+
+
+<!-- <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	<div class="flipper">
+		<div class="front">
+			front content
+			<ol>
+				<li>info</li>
+				<li>about</li>
+				<li>first event</li>
+			</ol>
+		</div>
+		<div class="back">
+			back content
+			<input id = "register-button" type="button" name="register" value = "register">
+		</div>
+	</div>
+ -->
+
+
+			 <!-- 	<div class = "event">
 			 		<span id = "event_heading">CodetoLive</span>
 			 
 
@@ -237,12 +288,12 @@ var x = setInterval(function() {
 			 </div>
 			
 		 </div>	
-	 </section>
- -->
+	 </section> -->
+
 	
 	 <section id="sponsors">
 		 <div class="container">	
-			 <h3>Techno Carnival Sponsors </h3>
+			 <h3> Sponsors </h3>
 			 <div class="row">
 				 <div class="col-md-1 hidden-sm hidden-ms hidden-xs matchHeight"></div>
 				 <div class="col-md-2 col-sm-3 col-ms-4 col-xs-6 matchHeight">
@@ -287,7 +338,7 @@ var x = setInterval(function() {
 
 		 <div class="container">
 
-			 <h3 id = "meetteam">Meet Techno Carnival Team! </h3>
+			 <h3 id = "meetteam">Meet Impulse 1.0 Team! </h3>
 			 <div class = "photorow">
 
 			<div class = "person_vinay">
@@ -340,7 +391,7 @@ var x = setInterval(function() {
 
 			 <div class = "photorow">
 			<div class = "person">
-				<img id = "photo" src="assets/images/heena.jpg"  alt = "Heena" >
+				<img id = "photo" src="assets/images/heena2.jpeg"  alt = "Heena" >
 				<span id = "personname">Heena Garg</span>
 			</div>
 
@@ -428,7 +479,10 @@ var x = setInterval(function() {
 	 </section>
 
 <section id = "contactus">
-	<p>sample text</p>
+<h3 id = "header_contact">Have a Query? Maybe we can help you..</h3>
+<h4 id = contact>Write to Us at -  <span id = "id_email"><a id = "aemail" href = "mailto:iosdmait@iosd.tech" target= "_top">iosdmait@iosd.tech</a></span></h4>
+<!-- <h3 id = "header_contact">Or</h3> -->
+<h4 id = "contact">Or Contact -<span id = "id">Deepali Singhal  </span><span id = "number">(8882525739)</span> </h4>
 </section>
 
 
@@ -438,6 +492,18 @@ var x = setInterval(function() {
 			 <form>
 				 <h3>Register for events </h3>			
 				 <div class="row">
+ <div class="col-md-6 col-sm-6 col-xs-12">
+						 <div class="select">
+							 <select class="form-control">
+							 	 <option />Choose an Event
+								 <option />Mait Hacks 
+								 <option />CodetoLive
+								 <option />UI/UX Designing 
+								 <option />Workshop
+
+							 </select>
+						 </div>
+					 </div>		
 
 					 <div class="col-md-6 col-sm-6 col-xs-12">
 						 <input type="text" name="name" placeholder="Your Name" value="" class="form-control" />
@@ -456,23 +522,14 @@ var x = setInterval(function() {
 						 <div class="select">
 							 <select class="form-control">
 								 <option />Year 
-								 <option />1 
-								 <option />2 
-								 <option />3 
-								 <option />4 
+								 <option />First Year
+								 <option />Second Year 
+								 <option />Third Year
+								 <option />Fourth Year 
 							 </select>
 						 </div>
 					 </div>
-					 <div class="col-md-6 col-sm-6 col-xs-12">
-						 <div class="select">
-							 <select class="form-control">
-							 	 <option />choose an event
-								 <option />1st event 
-								 <option />2nd event 
-								 <option />3rd event 
-							 </select>
-						 </div>
-					 </div>			
+						
 					 		 <label>Why should we choose you?</label>		
 					 <div class="col-xs-12">
 						 <textarea placeholder="(Max 100 words)" class="form-control"></textarea>
@@ -511,8 +568,9 @@ var x = setInterval(function() {
 			 <!-- <span id = "festname">TechnoCarnival</span> -->
 
 			 <ul class="menu-footer hidden-ms hidden-xs">
-					 <li><a href="#plan">Schedule </a></li>
 					 <li><a href="#video">Teaser </a></li>
+					 <li><a href="#plan">Schedule </a></li>
+					 
 					 <li><a href="#sponsors">Sponsors </a></li>
 					 <li><a href="#prizes">Our team </a></li>
 					 <li><a href="#gallery">Gallery </a></li>
@@ -549,7 +607,7 @@ var x = setInterval(function() {
 				 	<li><a href="mailto:iosdmait@iosd.com?Subject=Techno%20Fest" target = "_top" class="fa fa-mail-forward"></a></li>
 			 </ul>	
 
- <div class = "copy">Copyright©2017 - 
+ <div class = "copy">Copyright©2018 - 
  	<!-- <div class = "iosdlink"> -->
  International Organisation Of Software Developers</div>
 
