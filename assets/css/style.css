@@ -1258,6 +1258,7 @@ background: url("../images/form-bg.png");
 #team {
   padding: 90px 0;
   background: url("../images/form-bg.png");
+  background-repeat: inherit;
 /*background: -webkit-linear-gradient(135deg, #1b1f83 0%, #972461 100%);*/
 
 }
@@ -1337,6 +1338,15 @@ margin-top: 0px;
 /*
 	11. Gallery grid
 */
+#event_header{
+  font-size: 50px;
+  /*color: #AC3A6D;*/
+  color: black;
+  font-weight: 400;
+
+}
+
+
 #events{
 
    background: #1b1f83;
@@ -1350,7 +1360,7 @@ margin-top: 0px;
    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b1f83', endColorstr='#972461', GradientType=1);
    /* IE6-9 */
    /*position: relative;*/
-   padding: 90px 0 120px;
+   /*padding: 90px 0 120px;*/
    background: url("../images/form-bg.png");
    color: #fff;
 
@@ -2205,8 +2215,8 @@ color: #AC3A6D;
 }
 .flip-container {
   margin-top: 60px;
-  margin-left: 135px;
-  perspective: 1000px;
+  margin-left: 100px;
+  perspective: 1300px;
 }
   /* flip the pane when hovered */
   .flip-container:hover .flipper, .flip-container.hover .flipper {
@@ -2214,10 +2224,10 @@ color: #AC3A6D;
   }
 
 .flip-container, .front, .back {
-border-radius: 20px 20px 20px 20px;
+/*border-radius: 20px 0px 20px 0px;*/
   float: left;
-  width: 250px;
-  height: 250px;
+  width: 500px;
+  height: 500px;
 }
 
 /* flip speed goes here */
@@ -2231,24 +2241,32 @@ border-radius: 20px 20px 20px 20px;
 
 /* hide back of pane during swap */
 .front{
-
+text-align: center;
+padding: 20px;
   backface-visibility: hidden;
     /*background-color: #818181;*/
-    background-color: #D4003F;
+    /*background-color: #D4003F;*/
   position: absolute;
+  border-radius: 20px 0px 20px 0px;
   top: 0;
   left: 0;
+  opacity: 0.3;
+  background-color: white;
 
-  z-index: 2;
+  /*z-index: 2;*/
   /* for firefox 31 */
   transform: rotateY(0deg);
 }
  .back {
   /*background-color: #818181;*/
-  background: linear-gradient(to right,#205874, #abbedf);
+  /*background: linear-gradient(to right,#205874, #abbedf);*/
     position: absolute;
+    border-radius: 0px 20px 0px 20px;
+    background-color: white;
+    opacity: 0.3;
   top: 0;
   left: 0;
+  backface-visibility: hidden;
 
   transform: rotateY(180deg);
 }
